@@ -16,7 +16,7 @@ export default function Banner() {
                             <h3 className='sm:text-[20px] text-[17px] font-[700] text-[#EC3D08]'>Welcome to Recipe Nest!</h3>
                             <h1 className='sm:text-[62px] text-[33px] font-[800] text-[#fff] mt-[20px]'>Discover Delicious Recipes Dishes!</h1>
                             <p className='sm:text-[17px] text-[14px] mt-[20px] text-[#7a7878]'>A recipe includes ingredients, cooking steps, and instructions to create a flavorful dish. Your Recipe Hunt Starts Here — Simple Ingredients, Tasty Results!</p>
-                            <button className='mt-[25px] btn-hero'>Shop Now</button>
+                          
                         </div>
 
                         <div className='text-center' data-aos="fade-left"  data-aos-duration="2000">
