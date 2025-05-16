@@ -27,7 +27,8 @@ export default function RecipeDetails({ model, setModel, product }) {
         }
       }} >
 
-        <div className="relative ModelContent p-6 rounded-md" data-aos="zoom-in"  data-aos-duration="700">
+        
+        <div className="relative ModelContent p-6 rounded-md bg-opacity-50" data-aos="zoom-in"  data-aos-duration="700">
           <button
             onClick={() => setModel(false)}
             className="absolute top-0 right-0 cursor-pointer text-white bg-[#EC3D08] px-[10px] py-[5px] mr-[10px] rounded-[50%]"

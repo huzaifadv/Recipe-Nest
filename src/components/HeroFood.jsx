@@ -28,7 +28,7 @@ export default function HeroFood() {
                     disableOnInteraction: false,
                 }}
                 modules={[EffectCube, Autoplay]}
-                className="mySwiper"
+                className="mySwiper relative z-0"
             >
                 <SwiperSlide>
                     <img src={hero1} />

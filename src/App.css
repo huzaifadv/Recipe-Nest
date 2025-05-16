@@ -21,7 +21,7 @@ body {
 
 .inputBox input {
   width: 40%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   padding: 16px 15px;
   border: none;
   outline: none;
@@ -74,13 +74,14 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
+  z-index: 0;
+  position: relative;
 }
 
 
 @media screen and (max-width: 500px) {
   .inputBox input {
     width: 60%;
-    margin-top: 30px;
     padding: 12px 15px;
   }
 

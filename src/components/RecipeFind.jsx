@@ -36,19 +36,31 @@ export default function RecipeFind({ seeDetails }) {
 
                 {/* Search */}
                 <div className='text-center inputBox'>
-                    <h1 className='text-[#fff] font-[800] sm:text-[40px] text-[25px]'>Find Any Recipe</h1>
-                    <input type="text"
-                        placeholder='Search Any Recipe'
-                        value={query}
-                        onChange={(e) => setQuery(e.target.value)}
-                        onKeyDown={(e) => {
-                            if (e.key === "Enter") {
-                                timer();
-                            }
-                        }}
-                    />
-                    <button className='searchBtn' onClick={timer}>Search</button>
+                    <h1 className='w-full text-[#fff] font-[800] sm:text-[40px] text-[25px] mb-4'>
+                        Find Any Recipe
+                    </h1>
+                    <div className="flex justify-center items-center w-full mt-[30px]">
+                        <input
+                            type="text"
+                            placeholder='Search Any Recipe'
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter") {
+                                    timer();
+                                }
+                            }}
+                            className="h-12 sm:h-14 px-4 rounded-l-md border-none outline-none w-2/3"
+                        />
+                        <button
+                            className='searchBtn h-12 sm:h-14 px-6 rounded-r-md bg-[#EC3D08] text-white font-semibold'
+                            onClick={timer}
+                        >
+                            Search
+                        </button>
+                    </div>
                 </div>
+
 
 
                 <div className="relative grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 sm:gap-[30px] mx-[20px] gap-[50px] mt-[100px]">
@@ -85,19 +97,19 @@ export default function RecipeFind({ seeDetails }) {
                         (
                             Array.isArray(food) && food.map((meal, index) => (
 
-                                <div key={index} className="w-full max-w-sm border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700" data-aos="fade-up"  data-aos-duration="2000">
-                                    <a href="#">
-                                        <img className="rounded-t-lg" src={meal.strMealThumb} alt="" />
-                                    </a>
+                                <div key={index} className="w-full max-w-sm border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700" data-aos="fade-up" data-aos-duration="2000">
+
+                                    <img className="rounded-t-lg" src={meal.strMealThumb} alt="" />
+
                                     <div className="p-5">
-                                        <a href="#">
-                                            <h3 className="mb-4 text-[25px] font-[700] tracking-tight text-gray-900 dark:text-white">
-                                                {meal.strMeal}
-                                            </h3>
-                                            <p className="mb-2 tracking-tight text-gray-900 dark:text-white">
-                                                <b>Category:</b> {meal.strCategory}
-                                            </p>
-                                        </a>
+
+                                        <h3 className="mb-4 text-[25px] font-[700] tracking-tight text-gray-900 dark:text-white">
+                                            {meal.strMeal}
+                                        </h3>
+                                        <p className="mb-2 tracking-tight text-gray-900 dark:text-white">
+                                            <b>Category:</b> {meal.strCategory}
+                                        </p>
+
                                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                             This recipe is very delicious, quick to prepare, healthy, and perfect for any meal or occasion.
 

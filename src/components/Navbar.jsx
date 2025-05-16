@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Logo from '/src/assets/images/logo.png'
+import { initFlowbite } from 'flowbite';
 
 export default function Navbar() {
+
+    useEffect(() => {
+        initFlowbite();
+    }, []);
+
+
     return (
+
         <>
             <nav className="border-gray-200 bg-[#1e2939]">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -73,7 +81,7 @@ export default function Navbar() {
                             <li>
                                 <a
                                     href="#"
-                                   className="block py-2 px-3 text-white bg-[transparent] rounded-sm"
+                                    className="block py-2 px-3 text-white bg-[transparent] rounded-sm"
                                 >
                                     Categories
                                 </a>
@@ -81,7 +89,7 @@ export default function Navbar() {
                             <li>
                                 <a
                                     href="#"
-                                   className="block py-2 px-3 text-white bg-[transparent] rounded-sm"
+                                    className="block py-2 px-3 text-white bg-[transparent] rounded-sm"
                                 >
                                     Contact
                                 </a>
