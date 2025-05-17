@@ -116,7 +116,7 @@ export default function RecipeFind({ seeDetails }) {
                                         </p>
                                         <button
                                             onClick={() => seeDetails(meal)}
-                                            className=" cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#EC3D08]"                                        >
+                                            className=" cursor-pointer rounded inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#EC3D08]"                                        >
                                             View Instructions
                                             <svg
                                                 className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
